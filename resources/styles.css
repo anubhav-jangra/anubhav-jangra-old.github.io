@@ -1,0 +1,188 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #37474F;
+}
+
+#first-a-tag {
+    padding-left: 12.5%;
+}
+
+#last-a-tag {
+    padding-right: 40%;
+}
+
+nav a {
+    color: #E3F2FD;
+    font-family: Raleway;
+    font-size: 24px;
+    margin: 10px;
+    text-decoration: none;
+    transition: all .05s ease-out;
+}
+
+nav a:hover {
+    font-size: 1.6em;
+    margin: 8px;
+    color: #B3E5FC;
+}
+
+i {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1030px) {
+    nav {
+        justify-content: center;
+    }
+    a {
+        font-size: 26px;
+    }
+    #first-a-tag {
+        padding-left: 0;
+    }
+    #last-a-tag {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.info {
+    background: #200122;
+    background: -webkit-linear-gradient(to right, #200122, #6f0000);
+    background: linear-gradient(to right, #200122, #6f0000);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+section {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+}
+
+section:nth-child(odd) {
+	background-color: #fff;
+    opacity: .95;
+}
+
+section:nth-child(even) {
+	background-color: #f5f5f5;
+    opacity: .95;
+}
+
+.basic {
+    margin: 100px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro .name {
+    color: #212121;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.basic #about-me{
+    margin-top: 50px;
+    max-width: 55vw;
+    font-size: 20px;
+    color: #424242;
+    font-family: Raleway, sans-serif;
+}
+
+#my-pic {
+    width: 20vw;
+    height: 20vw;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    background-image: url(https://orig00.deviantart.net/4521/f/2013/155/b/8/random_guy_sketch_by_sailorpretty-d67raep.jpg);
+}
+
+.projects {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.projects-title {
+    color: #212121;
+    font-family: Raleway, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.project-list li {
+    flex-basis: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #BCAAA4;
+    background: #F5F5F5;
+    border-radius: .5em;
+    margin-bottom: 10px;
+    transition: all .1s ease-in;
+}
+
+.project-list li:hover {
+    transform: scale(1.05);
+    background-color: #FAFAFA;
+}
+
+.project-list li .project-title {
+    color: #616161;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+.project-list li .project-info {
+    color: #757575;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+}
+
+.project-list li .project-image{
+    width: auto;
+    height: 30vw;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    border-radius: .5em;
+}
